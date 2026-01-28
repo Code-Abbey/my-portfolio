@@ -58,7 +58,7 @@ function App() {
     <div>
       <header className="site-header">
         <nav className="nav">
-          <a className="logo" href="#top">Code Abbey</a>
+          <a className="logo" href="#top">Abiodun Michael Adefusi</a>
           <div className="nav-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -80,11 +80,14 @@ function App() {
             animate="visible"
           >
             <motion.p className="eyebrow" variants={fadeUp}>
-              Hi, I’m Code Abbey
+              Hi, I’m Abiodun Michael Adefusi
             </motion.p>
-            <motion.h1 variants={fadeUp}>Building clean, modern web experiences.</motion.h1>
+            <motion.h1 variants={fadeUp}>
+              Building premium web experiences with clarity, speed, and style.
+            </motion.h1>
             <motion.p className="subhead" variants={fadeUp}>
-              Front-end developer focused on delightful UX, performance, and clean code.
+              Front-end developer focused on elegant typography, accessibility, and fast,
+              delightful user interfaces.
             </motion.p>
             <motion.div className="cta-group" variants={fadeUp}>
               <a className="btn primary" href="#projects">View Projects</a>
@@ -235,7 +238,7 @@ function App() {
       </main>
 
       <footer className="site-footer">
-        <p>© 2026 Code Abbey. All rights reserved.</p>
+        <p>© 2026 Abiodun Michael Adefusi. All rights reserved.</p>
         <div className="footer-links">
           <a href="https://github.com/Code_Abbey" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
