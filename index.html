@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code Abbey | Portfolio</title>
+    <meta name="description" content="Code Abbey — portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#top">Code Abbey</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Hi, I’m Code Abbey</p>
+          <h1>Building clean, modern web experiences.</h1>
+          <p class="subhead">
+            Front-end developer focused on delightful UX, performance, and clean code.
+          </p>
+          <div class="cta-group">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Let’s Talk</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>Short bio that highlights your strengths and what you love building.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>What I do</h3>
+            <p>
+              I design and build responsive web apps using modern tools, with a focus on
+              accessibility, performance, and clean architecture.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>What I value</h3>
+            <p>
+              Clear communication, well-structured code, and products that feel great to use.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Currently exploring</h3>
+            <p>Design systems, TypeScript, and performance optimization.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Replace these with your real projects.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Web App</div>
+            <h3>Portfolio Builder</h3>
+            <p>Fast, responsive site for personal branding and showcasing work.</p>
+            <a class="project-link" href="#">View Project →</a>
+          </article>
+          <article class="project-card">
+            <div class="project-tag">E-commerce</div>
+            <h3>ShopEase</h3>
+            <p>Clean UI and optimized checkout flow for higher conversions.</p>
+            <a class="project-link" href="#">View Project →</a>
+          </article>
+          <article class="project-card">
+            <div class="project-tag">Dashboard</div>
+            <h3>Insight Analytics</h3>
+            <p>Interactive dashboards with charts and filters.</p>
+            <a class="project-link" href="#">View Project →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>Tools and technologies I use day-to-day.</p>
+        </div>
+        <div class="skills-grid">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">React</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Git</span>
+          <span class="pill">Figma</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Want to work together? Send a message.</p>
+        </div>
+        <form class="contact-form" action="mailto:biodun.adefusi@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Code Abbey. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Code_Abbey" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:biodun.adefusi@gmail.com">Email</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
