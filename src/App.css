@@ -340,7 +340,7 @@ img { display: block; max-width: 100%; }
   position: relative;
 }
 
-.home-hero-inner { max-width: 960px; }
+.home-hero-inner { max-width: 100%; }
 
 /* Greeting typewriter */
 .home-greeting {
@@ -366,7 +366,7 @@ img { display: block; max-width: 100%; }
 
 /* Display name */
 .home-display {
-  font-size: clamp(4.5rem, 12vw, 12rem);
+  font-size: clamp(3rem, 8vw, 8rem);
   font-weight: 800;
   line-height: 0.92;
   letter-spacing: -0.04em;
@@ -919,7 +919,7 @@ img { display: block; max-width: 100%; }
   justify-content: flex-end;
 }
 .contact-display {
-  font-size: clamp(5rem, 15vw, 16rem);
+  font-size: clamp(3rem, 9.5vw, 9.5rem);
   font-weight: 800;
   line-height: 0.88;
   letter-spacing: -0.05em;
@@ -1054,7 +1054,7 @@ img { display: block; max-width: 100%; }
   .home-display { font-size: clamp(3rem, 19vw, 6rem); }
   .work-display { font-size: clamp(4rem, 25vw, 9rem); }
   .about-statement { font-size: clamp(2.2rem, 15vw, 4rem); }
-  .contact-display { font-size: clamp(3.5rem, 23vw, 7rem); }
+  .contact-display { font-size: clamp(2.5rem, 18vw, 7rem); }
   .home-stats { grid-template-columns: repeat(2,1fr); }
   .skills-groups-grid { grid-template-columns: 1fr 1fr; }
   .c-footer-links { gap: 1rem; font-size: 0.75rem; }
