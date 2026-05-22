@@ -333,17 +333,11 @@ img { display: block; max-width: 100%; }
   max-width: 1280px;
   margin: 0 auto;
   padding: 5rem 2rem 4rem;
+  min-height: calc(100dvh - var(--nav-h));
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
-
-@media (min-height: 1020px) {
-  .home-hero {
-    min-height: calc(100dvh - var(--nav-h));
-    padding: 6rem 2rem 4rem;
-  }
 }
 
 .home-hero-inner { max-width: 960px; }
@@ -514,6 +508,20 @@ img { display: block; max-width: 100%; }
 
 .home-work-footer { margin-top: 3rem; }
 
+/* Bio strip below hero */
+.home-bio {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  border-top: 1px solid var(--border);
+}
+.home-bio-wrap {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 /* Stats strip */
 .home-stats {
   max-width: 1280px;
@@ -547,9 +555,15 @@ img { display: block; max-width: 100%; }
 /* ─────────────────────────────────────────────────────────────────────────────
    WORK PAGE
 ───────────────────────────────────────────────────────────────────────────── */
-.work-page { max-width: 1280px; margin: 0 auto; padding: 4rem 2rem 0; }
+.work-page { max-width: 1280px; margin: 0 auto; padding: 0 2rem 0; }
 
-.work-header { padding: 2rem 0 0; }
+.work-header {
+  min-height: calc(100dvh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem 0 3rem;
+}
 .work-header-inner {}
 .work-display {
   font-size: clamp(5rem, 16vw, 18rem);
@@ -899,6 +913,10 @@ img { display: block; max-width: 100%; }
   max-width: 1280px;
   margin: 0 auto;
   padding: 4rem 2rem 3rem;
+  min-height: calc(100dvh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .contact-display {
   font-size: clamp(5rem, 15vw, 16rem);
@@ -977,39 +995,6 @@ img { display: block; max-width: 100%; }
    RESPONSIVE
 ───────────────────────────────────────────────────────────────────────────── */
 
-/* ── MacBook Pro / short viewports (max-height ~1000px @ desktop width) ── */
-@media (max-height: 1000px) and (min-width: 768px) {
-  /* Home hero — scale down so everything fits without scrolling */
-  .home-hero { padding: 3rem 2rem 2.5rem; }
-  .home-greeting { margin-bottom: 1.25rem; }
-  .home-display {
-    font-size: clamp(3rem, 8.5vw, 8rem);
-    margin-bottom: 1.5rem;
-  }
-  .home-divider { margin-bottom: 1.5rem; }
-  .home-bio-lead { font-size: 1rem; }
-  .home-bio-body { font-size: 0.88rem; }
-  .home-cta-row { margin-top: 1rem; }
-  .home-scroll-hint { bottom: 1.5rem; }
-
-  /* Work page — tighten up so filters and first cards are visible */
-  .work-page { padding-top: 2.5rem; }
-  .work-header { padding-top: 1rem; }
-  .work-display {
-    font-size: clamp(4rem, 11vw, 11rem);
-    margin-bottom: 1rem;
-  }
-  .work-filters { padding-top: 1.5rem; padding-bottom: 1.5rem; margin-bottom: 2rem; }
-
-  /* Contact page — prevent "CONNECT." line from wrapping or overflowing */
-  .contact-hero { padding: 2.5rem 2rem 2rem; }
-  .contact-display {
-    font-size: clamp(3.5rem, 10vw, 10rem);
-    margin-bottom: 1.5rem;
-  }
-  .contact-subtitle { font-size: 0.95rem; }
-}
-
 /* ── 1024px ── */
 @media (max-width: 1024px) {
   .work-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1037,10 +1022,12 @@ img { display: block; max-width: 100%; }
   .home-hero { padding: 3rem 1.25rem 3rem; min-height: auto; }
   .home-display { font-size: clamp(3.5rem, 18vw, 7rem); }
   .home-stats { grid-template-columns: repeat(2, 1fr); }
+  .home-bio { padding: 3rem 1.25rem; }
   .home-work { padding: 0 1.25rem; margin-top: 4rem; }
   .home-scroll-hint { display: none; }
 
-  .work-page { padding: 2rem 1.25rem 0; }
+  .work-page { padding: 0 1.25rem 0; }
+  .work-header { min-height: auto; padding: 2.5rem 0 2rem; }
   .work-grid { grid-template-columns: 1fr; gap: 0; }
   .work-filters { gap: 0.4rem; }
 
@@ -1051,7 +1038,7 @@ img { display: block; max-width: 100%; }
   .skills-groups-grid { grid-template-columns: repeat(2, 1fr); }
   .about-cta { padding-left: 1.25rem; padding-right: 1.25rem; flex-direction: column; align-items: flex-start; }
 
-  .contact-hero { padding: 2rem 1.25rem 2rem; }
+  .contact-hero { padding: 2rem 1.25rem 2rem; min-height: auto; }
   .contact-display { font-size: clamp(4rem, 20vw, 8rem); }
   .contact-body { padding: 0 1.25rem; }
 

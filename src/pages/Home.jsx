@@ -98,36 +98,20 @@ export default function Home() {
           />
 
           <motion.div
-            className="home-intro"
+            className="home-cta-row"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.05, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="home-bio-lead">
-              AI enthusiast and multidisciplinary builder passionate about creating technology
-              that solves real-world problems and delivers meaningful experiences.
-            </p>
-            <p className="home-bio-body">
-              I work across AI, interactive systems, mobile apps, web technologies, IoT, and
-              digital products — blending technical development with creativity, usability,
-              and innovation.
-            </p>
-            <p className="home-bio-body">
-              My toolkit includes React, Kotlin, Python, C#, Unity, embedded systems, and
-              modern AI technologies — driven by curiosity, experimentation, and building
-              things that make an impact.
-            </p>
-            <div className="home-cta-row">
-              <Link to="/work" className="c-btn c-btn--primary">View All Work</Link>
-              <a
-                href="https://github.com/Code-Abbey"
-                target="_blank"
-                rel="noreferrer"
-                className="c-btn c-btn--ghost"
-              >
-                GitHub ↗
-              </a>
-            </div>
+            <Link to="/work" className="c-btn c-btn--primary">View All Work</Link>
+            <a
+              href="https://github.com/Code-Abbey"
+              target="_blank"
+              rel="noreferrer"
+              className="c-btn c-btn--ghost"
+            >
+              GitHub ↗
+            </a>
           </motion.div>
         </div>
 
@@ -144,6 +128,32 @@ export default function Home() {
             ↓
           </motion.span>
           <span>scroll</span>
+        </motion.div>
+      </section>
+
+      {/* ── Bio ─────────────────────────────────────────────────── */}
+      <section className="home-bio">
+        <motion.div
+          className="home-bio-wrap"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+        >
+          <p className="home-bio-lead">
+            AI enthusiast and multidisciplinary builder passionate about creating technology
+            that solves real-world problems and delivers meaningful experiences.
+          </p>
+          <p className="home-bio-body">
+            I work across AI, interactive systems, mobile apps, web technologies, IoT, and
+            digital products — blending technical development with creativity, usability,
+            and innovation.
+          </p>
+          <p className="home-bio-body">
+            My toolkit includes React, Kotlin, Python, C#, Unity, embedded systems, and
+            modern AI technologies — driven by curiosity, experimentation, and building
+            things that make an impact.
+          </p>
         </motion.div>
       </section>
 
