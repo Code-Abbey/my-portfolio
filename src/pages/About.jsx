@@ -51,24 +51,31 @@ export default function About() {
             transition={{ duration: 0.7 }}
           >
             <p className="bio-lead">
-              I'm <strong>Abiodun Michael Adefusi</strong> — a Creative Computing student at
-              the University of Applied Sciences St Pölten with a passion for building technology
-              that solves real problems and creates meaningful experiences.
+              I'm <strong>Abiodun Michael Adefusi</strong>, a Creative Computing student
+              specialising in AI at the University of Applied Sciences St. Pölten, with a background
+              that sits at the crossroads of data, technology and human experience.
             </p>
             <p>
-              My work spans AI and machine learning, native Android development, web applications,
-              IoT and embedded systems, interactive experiences, and game development. I enjoy
-              working at the intersection of technical depth and creative thinking — finding elegant
-              solutions to complex problems.
+              Before my degree I worked as a data analyst for a US tech platform, tracking campaign
+              performance and building dashboards that informed real business decisions. I also spent
+              time at Heineken in a data-driven operational role. Those experiences taught me something
+              that most computing students don't get in a classroom. Technology only matters when it
+              connects to a decision someone actually needs to make.
             </p>
             <p>
-              Beyond coding, I'm driven by curiosity and experimentation. I believe the best
-              technology is not just functional — it's thoughtfully designed, purposefully built,
-              and genuinely useful to people.
+              My work spans data analytics and visualisation, web and AI applications, Android
+              development, IoT, and interactive experiences. But what ties it all together is a deep
+              interest in research and human-centred product development, the belief that the best
+              solutions come from truly understanding the people you are building for and placing their
+              experience at the very core of every decision.
             </p>
             <p>
-              Currently studying at the University of Applied Sciences St Pölten, continuously
-              exploring new domains, and always open to interesting collaborations.
+              I am drawn to problems where technical depth and creative thinking have to work together,
+              where the solution has to be both rigorous and human. I believe technology should not just
+              function well, it should feel right to the people using it.
+            </p>
+            <p>
+              Always open to interesting collaborations, curious conversations and problems worth solving.
             </p>
           </motion.div>
 
