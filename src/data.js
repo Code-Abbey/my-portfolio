@@ -105,24 +105,39 @@ export const projects = [
     liveUrl: 'https://code-abbey.github.io/html_css_project/',
   },
   {
-    slug: 'house-price-prediction',
+    slug: 'image-classification-deep-learning',
     tag: 'Machine Learning',
     index: '08',
-    title: 'House Price Prediction',
-    short: 'Linear regression trained on housing data — my first ML project.',
+    title: 'Image Classification with Deep Learning',
+    short: 'Binary car image classification with MLP, CNN, and data augmentation.',
     description:
-      'Linear regression model trained to predict house prices from structured housing dataset. Built with scikit-learn, pandas, and NumPy — covers the full ML workflow: exploratory data analysis, feature engineering, model training, evaluation, and visualisation in Jupyter Notebook.',
-    lang: 'Python',
-    year: '2021',
+      'Deep learning image classification lab for detecting cars in grayscale images. Built a complete pipeline with image loading, preprocessing, standardization, MLP and CNN models, validation curves, data augmentation, dropout, and batch normalization using TensorFlow/Keras.',
+    lang: 'Python / TensorFlow',
+    year: '2026',
     color: '#6d28d9',
     textColor: '#fff',
-    githubUrl: 'https://github.com/Code-Abbey/House-Price-Prediction',
+    githubUrl: 'https://github.com/Code-Abbey/image-classification-deep-learning-lab',
+    liveUrl: null,
+  },
+  {
+    slug: 'association-rules',
+    tag: 'Data Science',
+    index: '09',
+    title: 'Association Rules',
+    short: 'Market basket analysis using Apriori association-rule mining.',
+    description:
+      'Market basket analysis project that discovers product combinations frequently bought together. Uses transaction preprocessing, one-hot encoding, Apriori frequent itemsets, and association rules evaluated with support, confidence, lift, leverage, and conviction.',
+    lang: 'Python / Jupyter',
+    year: '2025',
+    color: '#0e7490',
+    textColor: '#fff',
+    githubUrl: 'https://github.com/Code-Abbey/Association-Rules',
     liveUrl: null,
   },
   {
     slug: 'youtube-downloader',
     tag: 'Python Tool',
-    index: '09',
+    index: '10',
     title: 'YouTube Downloader',
     short: 'CLI tool for downloading YouTube audio and video in multiple formats.',
     description:
@@ -137,7 +152,7 @@ export const projects = [
   {
     slug: 'doings',
     tag: 'Full Stack',
-    index: '10',
+    index: '11',
     title: 'Doings!',
     short: 'Role-based team task management app with React, Node.js, Express, and MongoDB.',
     description:
@@ -155,8 +170,8 @@ export const skillGroups = [
   { label: 'Languages', items: ['JavaScript', 'TypeScript', 'Python', 'C#', 'Kotlin', 'HTML', 'CSS'] },
   { label: 'Web & UI', items: ['React', 'Vite', 'Framer Motion', 'Jetpack Compose'] },
   { label: 'Game / XR', items: ['Unity', 'Universal Render Pipeline'] },
-  { label: 'Data & ML', items: ['scikit-learn', 'pandas', 'NumPy', 'Jupyter'] },
+  { label: 'Data & ML', items: ['TensorFlow', 'Keras', 'scikit-learn', 'pandas', 'NumPy', 'Jupyter'] },
   { label: 'Tools', items: ['Git', 'GitHub', 'Room DB', 'DataStore', 'Figma'] },
 ]
 
-export const featured = ['doings', 'cross-reality-dev', 'harmonica-tab-app', 'creative-code-lab']
+export const featured = ['doings', 'image-classification-deep-learning', 'association-rules', 'harmonica-tab-app']
