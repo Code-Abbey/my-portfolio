@@ -34,7 +34,7 @@ export default function About() {
           </div>
           <h1 className="about-statement">
             <RevealLine delay={0.15}>Turning ambitious</RevealLine>
-            <RevealLine delay={0.28}>ideas into practical</RevealLine>
+            <RevealLine delay={0.28}>ideas into <span className="statement-accent">practical</span></RevealLine>
             <RevealLine delay={0.41}><span className="statement-accent">solutions.</span></RevealLine>
           </h1>
         </div>
@@ -51,28 +51,34 @@ export default function About() {
             transition={{ duration: 0.7 }}
           >
             <p className="bio-lead">
-              I'm <strong>Abiodun Michael Adefusi</strong>, a Creative Computing student
-              specialising in AI at the University of Applied Sciences St. Pölten, with a background
-              that sits at the crossroads of data, technology and human experience.
+              I'm <strong>Abiodun Michael Adefusi</strong>, a developer and creative thinker who
+              loves turning ideas into digital products that people genuinely enjoy using.
             </p>
             <p>
-              Before my degree I worked as a data analyst for a US tech platform, tracking campaign
-              performance and building dashboards that informed real business decisions. I also spent
-              time at Heineken in a data-driven operational role. Those experiences taught me something
-              that most computing students don't get in a classroom. Technology only matters when it
-              connects to a decision someone actually needs to make.
+              I have worked with international companies in tech and consumer goods, including
+              Topcoder in the US and Heineken's operation in Nigeria, helping teams understand
+              their data and make better decisions with it. That experience shaped how I think
+              today. I care less about technology for its own sake and more about what it actually
+              does for the people who use it.
             </p>
             <p>
-              My work spans data analytics and visualisation, web and AI applications, Android
-              development, IoT, and interactive experiences. But what ties it all together is a deep
-              interest in research and human-centred product development, the belief that the best
-              solutions come from truly understanding the people you are building for and placing their
-              experience at the very core of every decision.
+              My projects range from intelligent applications and websites to mobile apps, games
+              and interactive experiences. I enjoy that variety, because the most interesting ideas
+              rarely fit neatly into one box, and I like being able to take something from a first
+              sketch all the way to a finished product.
             </p>
             <p>
-              I am drawn to problems where technical depth and creative thinking have to work together,
-              where the solution has to be both rigorous and human. I believe technology should not just
-              function well, it should feel right to the people using it.
+              At the heart of everything I build is a simple belief: great products start with
+              understanding people. That approach has already earned recognition, including a top
+              placement for Outstanding Product Prototype at the EUDRES iLiving Lab in Finland and
+              the Greenest Product Award at the EUDRES Hackathon in Budapest.
+            </p>
+            <p>
+              I'm currently completing my second degree, a BSc in Creative Computing at the
+              University of Applied Sciences St. Pölten, where I specialise in Applied Artificial Intelligence,
+              Human-Computer Interaction, Software Development and Product Development. Alongside
+              my studies, I serve as an executive on the EUDRES Board of Student Representatives,
+              representing students across a European university alliance within the European Union.
             </p>
             <p>
               Always open to interesting collaborations, curious conversations and problems worth solving.
